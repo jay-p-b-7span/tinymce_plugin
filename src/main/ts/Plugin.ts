@@ -37,7 +37,9 @@ const onSelectFromGallery = (response) =>  {
       tinymce.ScriptLoader.loadScript('https://media-library.cloudinary.com/global/all.js').then( () => {
         console.log('script loaded');
 
+        // @ts-ignore
         libraryWidget = cloudinary.createMediaLibrary(
+          // @ts-ignore
           library_widget_config,{
                 insertHandler: onSelectFromGallery,
           }
