@@ -2,6 +2,21 @@
 
 Welcome stranger! This is a repo containing the cloudinary TinyMCE plugin.
 
+### Getting Started
+
+- Please update cloudinary configuration in `src/main/ts/Plugin.ts`
+
+- Place below `json` inside Rich text editor `interface` section
+
+```json
+{
+  "toolbar": "cloudinary h1 h2 h3 fontselect forecolor backcolor strikethrough bold italic",
+  "external_plugins": {
+    "cloudinary": "path of cloudinary js file"
+  }
+}
+```
+
 ### Response from cloudinary after selecting Asset
 
 https://cloudinary.com/documentation/media_library_widget

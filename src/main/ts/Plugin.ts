@@ -1,5 +1,6 @@
 import { Editor, TinyMCE } from 'tinymce';
 
+
 declare const tinymce: TinyMCE;
 const library_widget_config = {
   cloud_name: "dmparrmdk",
